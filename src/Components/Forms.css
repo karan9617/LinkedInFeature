@@ -1,0 +1,35 @@
+
+.maindiv{
+    align-items: center;
+}
+.head{
+    margin-top: 60px;
+   
+}
+
+.heading4{
+    font-size: 17px;
+    color: darkgrey;
+
+}
+
+.username{
+    width: 200px;
+    align-self: center;
+}
+
+.password{
+    width:200px;
+}
+.forms{
+    width: 400px;
+    margin-top: 50px;
+
+    position: relative;
+    left: 360px;
+}
+
+.signin{
+    width:360px;
+    background-color: #0073b1;
+}

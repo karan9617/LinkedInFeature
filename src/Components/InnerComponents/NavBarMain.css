@@ -1,0 +1,111 @@
+
+
+.iconmain{
+    margin:-20px;
+    position: relative;
+    top: 12px;
+    
+    float: left;
+
+    right: 1200px;
+}
+form{
+    align-content: flex-start;
+    left: 100px;
+}
+
+#bb{
+    background-color: #004b7c;
+
+}
+.searchinput{
+    padding:4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+    top:22px;
+    width: 230px;
+}
+.apiicon{
+  
+   position: relative;
+   left: -400px;
+  
+}
+
+nav li{
+  
+    list-style:none;
+   position: relative;
+   bottom:30px;
+   left:700px;
+    
+}
+.hometext{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    right: 15px;
+}
+p{
+    font-size: 13px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #004b7c;
+  }
+  
+  .topnav a {
+    float: right;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: #ffffff;;
+  }
+  
+  .topnav a.active {
+    background-color:#004b7c;
+    color: white;
+  }
+
+ .bellicon{
+     position: relative;
+     left: -326px;
+     
+ }
+ .usericon{
+    position: relative;
+    left: -448px;
+   
+ }
+ .referralicon{
+     position: relative;
+     right: 380px;
+     bottom: 13px;
+ }
+ .referralText{
+     font-size: 13px;
+     color: white;
+     position: relative;
+     top: 17px;
+     right: 27px;
+ }
+ .notificationText{
+    font-size: 13px;
+    color: white;
+    position: relative;
+    top: 17px;
+    right: 38px;
+}
+.messageicon{
+    position: relative;
+    right: 46px;
+}

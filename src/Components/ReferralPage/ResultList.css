@@ -1,0 +1,8 @@
+.leftlist{
+    background-color: #ffffff;
+}
+
+.leftlist li:hover{
+    background-color: antiquewhite;
+}
+

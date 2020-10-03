@@ -1,0 +1,46 @@
+
+
+.listblock{
+    overflow: auto;
+}
+
+.recruiterName{
+    font-size: 19;
+    position: relative;
+    left: 20px;
+}
+
+p{
+    color: grey;
+
+}
+.profilepicture{
+    position: relative;
+    top: 19px;
+}
+
+.recruiterCompany{
+    position: relative;
+    left: 73px;
+    top: -13px;
+
+}
+.locationName{
+    position: relative;
+    left: 68px;
+    top: -28px;
+}
+.requestbutton{
+    position: relative;
+    width: 90px;
+    background-color: #1E90FF;
+    color: white;
+    border: 1px solid #1E90FF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 7px;
+    top: -10px;
+}
+.requestText{
+    font-size: 8;
+}
