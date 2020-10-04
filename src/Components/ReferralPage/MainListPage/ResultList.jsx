@@ -18,18 +18,22 @@ class ResultList extends Component {
                 return (
                     <div>
                         <div class="col-md-6 leftlist">
-                            {this.props.names.map(name =>
-                                <ul>
-                                    <li>
-                                        <DerviedList
-                                            key={name.key}
-                                            name={name}
-                                            handleRequestButton={this.handleRequestButton}
-                                        />
-                                        <hr />
-                                    </li>
-                                </ul>
-                            )}
+                            {
+                                this.props.names.filter(name =>
+                                    name.company.includes(this.props.inputVariable)).map(name2 => (
+                                        <ul>
+                                            <li>
+                                                <DerviedList
+                                                    key={name2.key}
+                                                    name2={name2}
+                                                    handleRequestButton={this.handleRequestButton}
+                                                />
+                                                <hr />
+                                            </li>
+                                        </ul>
+                                    ))
+
+                            }
 
                         </div>
                         <div class="col-md-6 leftlist">

@@ -9,6 +9,7 @@ import ResultList from "./MainListPage/ResultList";
 class ReferralClass extends Component {
     state = {
 
+        inputVariable: '',
         visibilityOfList: 1,
         requestButtonFlag: 1,
 
@@ -16,9 +17,9 @@ class ReferralClass extends Component {
             { id: 0, name: "Mark Manson", company: "Google", location: "San Francisco,US", img: "https://bioprotect.com/wp-content/uploads/2017/10/maya-profile-round.jpg" },
             { id: 0, name: "James Adam", company: "Google", location: "Seattle,US", img: "https://cdn.iconscout.com/icon/free/png-256/microsoft-26-722716.png" },
             { id: 0, name: "Ross Geller", company: "Google", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
-            { id: 0, name: "Anjali Desai", company: "Google", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
-            { id: 0, name: "Anna Bell", company: "Google", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
-            { id: 0, name: "Mark Manson", company: "Google", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
+            { id: 0, name: "Anjali Desai", company: "Amazon", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
+            { id: 0, name: "Anna Bell", company: "Microsoft", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
+            { id: 0, name: "Mark Manson", company: "Amazon", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
             { id: 0, name: "Mark Manson", company: "Google", location: "San Francisco,US", img: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/microsoft-512.png" },
         ]
 
@@ -32,13 +33,14 @@ class ReferralClass extends Component {
 
                     <SearchBar
                         visibilityOfList={this.state.visibilityOfList}
-
+                        inputVariable={this.state.inputVariable}
+                        handleCompanySearch={this.handleCompanySearch}
                     />
 
                     <ResultList
                         visibilityOfList={this.state.visibilityOfList}
                         names={this.state.names}
-
+                        inputVariable={this.state.inputVariable}
                     />
                 </div>
             </div>
@@ -50,7 +52,12 @@ class ReferralClass extends Component {
         this.visibilityOfList = number;
 
     }
+    handleCompanySearch = (event) => {
 
+        this.setState(
+            { inputVariable: event.target.value }
+        );
+    }
 }
 
 export default ReferralClass;

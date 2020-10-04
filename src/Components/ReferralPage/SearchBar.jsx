@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 import "./SearchBar.css";
 import ResultList from './MainListPage/ResultList';
 class SearchBar extends Component {
-    state = {}
+    state = {
+    }
+
+
+
     render() {
         return (
 
@@ -14,7 +18,7 @@ class SearchBar extends Component {
                 <div>
                     <form>
                         <input type="text" placeholder="Search by title, skill, or company"
-                            class="titlesearchbar" />
+                            class="titlesearchbar" onChange={this.props.handleCompanySearch} />
                         <input type="text" placeholder="City, state, or zip code"
                             class="titlesearchbar" />
 
@@ -30,5 +34,6 @@ class SearchBar extends Component {
     }
 
 }
+
 
 export default SearchBar;
